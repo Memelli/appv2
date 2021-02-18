@@ -1,14 +1,14 @@
 const restful = require('node-restful')
 const mongoose = restful.mongoose
 
-const creditSchema = new mongoose.Sceham({
+const creditSchema = new mongoose.Schema({
     name: { type: String, required: true },
     value: { type: Number, required: true }
 })
 
 const debtSchema = new mongoose.Schema({
     name: { type: String, required: true },
-    value: { type: Number, required: true },
+    value: { type: Number, required: [true, 'O valor é obrigatório'] },
     status: { type: String, required: false, uppercase: true,
         enum: ['PAGO', 'PENDENTE', 'AGENDADO'] }
 })
