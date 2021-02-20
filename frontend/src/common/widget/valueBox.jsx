@@ -1,6 +1,7 @@
 import React from 'react'
 import Grid from '../layout/grid'
-import '../template/custom.css'
+import './valueBox.css'
+
 
 export default props => (
     

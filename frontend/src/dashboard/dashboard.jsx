@@ -23,7 +23,7 @@ class Dashboard extends Component {
                 <ContentHeader title='Dashboard' small='Aqui você encontra o resumo dos seus créditos e débitos.' />
                 <Content>
                     <div className='row'>
-                    <ValueBox cols='12 4' color='dark-grey' icon='bank'
+                    <ValueBox cols='12 4' color='dark-grey' icon='usd'
                         value={`R$ ${credit}`} text='Total de Créditos' />
                     <ValueBox cols='12 4' color='dark-red' icon='credit-card'
                         value={`R$ ${debt}`} text='Total de Débitos' />

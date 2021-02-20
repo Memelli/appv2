@@ -5,6 +5,7 @@ import { Field, arrayInsert, arrayRemove } from 'redux-form'
 import Grid from '../common/layout/grid'
 import Input from '../common/form/input'
 import If from '../common/operator/If'
+import './itemList.css'
 
 class ItemList extends Component {
 
@@ -33,15 +34,15 @@ class ItemList extends Component {
                         placeholder='Informe o status' readOnly={this.props.readOnly} /></td>
                 </If>
                 <td>
-                    <button type='button' className='btn btn-success'
+                    <button type='button' className='btn btn-newGreen'
                         onClick={() => this.add(index + 1)}>
                         <i className="fa fa-plus"></i>
                     </button>
-                    <button type='button' className='btn btn-warning'
+                    <button type='button' className='btn btn-newOrange'
                         onClick={() => this.add(index + 1, item)}>
                         <i className="fa fa-clone"></i>
                     </button>
-                    <button type='button' className='btn btn-danger'
+                    <button type='button' className='btn btn-newRed'
                         onClick={() => this.remove(index)}>
                         <i className="fa fa-trash-o"></i>
                     </button>

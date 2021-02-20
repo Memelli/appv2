@@ -9,11 +9,11 @@ export default ({credit, debt}) => (
         <fieldset>
             <legend>Resumo</legend>
             
-                <ValueBox cols='12 4' color='green' icon='bank'
+                <ValueBox cols='12 4' color='dark-grey' icon='usd'
                     value={`R$ ${credit}`} text='Total de Créditos' />
-                <ValueBox cols='12 4' color='red' icon='credit-card'
+                <ValueBox cols='12 4' color='dark-red' icon='credit-card'
                     value={`R$ ${debt}`} text='Total de Débitos' />
-                <ValueBox cols='12 4' color='blue' icon='money'
+                <ValueBox cols='12 4' color='dark-blue' icon='money'
                     value={`R$ ${credit - debt}`} text='Valor Consolidado' />
             
         </fieldset>

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { getList, showUpdate, showDelete } from './billingCycleAction'
+import './itemList.css'
 
 class BillingCycleList extends Component {
 
@@ -17,10 +18,10 @@ class BillingCycleList extends Component {
                 <td>{bc.month}</td>
                 <td>{bc.year}</td>
                 <td>
-                    <button className='btn btn-warning' onClick={() => this.props.showUpdate(bc)}>
+                    <button className='btn btn-newOrange' onClick={() => this.props.showUpdate(bc)}>
                         <i className='fa fa-pencil'></i>
                     </button>
-                    <button className='btn btn-danger' onClick={() => this.props.showDelete(bc)}>
+                    <button className='btn btn-newRed' onClick={() => this.props.showDelete(bc)}>
                         <i className='fa fa-trash-o'></i>
                     </button>
                 </td>
