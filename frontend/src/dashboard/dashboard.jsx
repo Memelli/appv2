@@ -20,7 +20,7 @@ class Dashboard extends Component {
         return (
             <div>
                 
-                <ContentHeader title='Dashboard' small='Versão 1.0' />
+                <ContentHeader title='Dashboard' small='Aqui você encontra o resumo dos seus créditos e débitos.' />
                 <Content>
                     <div className='row'>
                     <ValueBox cols='12 4' color='green' icon='bank'

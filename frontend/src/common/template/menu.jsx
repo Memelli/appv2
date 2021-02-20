@@ -6,7 +6,7 @@ export default props => (
     <ul className='sidebar-menu'>
         <MenuItem path='/' label='Dashboard' icon='dashboard' />
         <MenuTree label='Cadastro' icon='edit'>
-            <MenuItem path='billingCycles' label='Ciclo de Pagamentos' icon='usd'/>
+            <MenuItem path='billingCycles' label='Cadastrar Pagamentos' icon='usd'/>
             {/* <MenuItem path='users' label='Usuarios' icon='user'/> */}
         </MenuTree>
     </ul>

@@ -7,8 +7,7 @@ export default props => (
         <a href="/#/" className="logo">
             <span className='logo-mini'>A</span>
             <span className="logo-lg">
-                <i className="fa fa-money"></i>
-                    App
+                    App&copy;
             </span>
         </a>
         <nav className='navbar navbar-static-top'>
