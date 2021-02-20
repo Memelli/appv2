@@ -21,3 +21,19 @@ function submit(values, url) {
             })
     }
 }
+export function logout() {
+    return { type: 'TOKEN_VALIDATED', payload: false }
+}
+export function validateToken(token) {
+    return dispatch => {
+        if (token) {
+            axios.post(`${consts.OAPI_URL}/validateToken`, { token })
+                .then(resp => {
+                    dispatch({ type: 'TOKEN_VALIDATED', payload: resp.data.valid })
+                })
+                .catch(e => dispatch({ type: 'TOKEN_VALIDATED', payload: false }))
+        } else {
+            dispatch({ type: 'TOKEN_VALIDATED', payload: false })
+        }
+    }
+}

@@ -11,6 +11,10 @@ export default props => (
                     App
             </span>
         </a>
-    <Navbar />
+        <nav className='navbar navbar-static-top'>
+            <a href className='sidebar-toggle' data-toggle='offcanvas'></a>
+            <Navbar />
+        </nav>
+    
     </header>
 )
