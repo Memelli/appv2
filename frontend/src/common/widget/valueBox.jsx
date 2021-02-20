@@ -1,5 +1,6 @@
 import React from 'react'
 import Grid from '../layout/grid'
+import '../template/custom.css'
 
 export default props => (
     
